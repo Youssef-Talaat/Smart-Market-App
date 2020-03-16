@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "457131239424",
+    "firebase_url": "https://mdp-smart-market.firebaseio.com",
+    "project_id": "mdp-smart-market",
+    "storage_bucket": "mdp-smart-market.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457131239424:android:8c822de9b896d697a690e5",
+        "android_client_info": {
+          "package_name": "com.example.mdpsmartmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457131239424-mqgrfonn395als5in26mvj824sfecr5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mdpsmartmarket",
+            "certificate_hash": "c4254d5617069cc3706287f29962ef6558dda735"
+          }
+        },
+        {
+          "client_id": "457131239424-je8d0lr4n7dgtk43o9q544gpfsdjuv1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyBx76wt5dKMuLyS76lgy9Tt44-i5raS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457131239424-je8d0lr4n7dgtk43o9q544gpfsdjuv1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

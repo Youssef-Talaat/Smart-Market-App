@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">457131239424-je8d0lr4n7dgtk43o9q544gpfsdjuv1b.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://mdp-smart-market.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">457131239424</string>
+    <string name="google_api_key" translatable="false">AIzaSyDyBx76wt5dKMuLyS76lgy9Tt44-i5raS8</string>
+    <string name="google_app_id" translatable="false">1:457131239424:android:8c822de9b896d697a690e5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDyBx76wt5dKMuLyS76lgy9Tt44-i5raS8</string>
+    <string name="google_storage_bucket" translatable="false">mdp-smart-market.appspot.com</string>
+    <string name="project_id" translatable="false">mdp-smart-market</string>
+</resources>

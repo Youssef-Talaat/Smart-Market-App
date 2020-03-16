@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mdpsmartmarket">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="scan &amp; go"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.EditUsersPageActivity"></activity>
+        <activity android:name=".Activities.EditProductsPageActivity" />
+        <activity android:name=".Activities.StaffHomePageActivity" />
+        <activity android:name=".Activities.ProceedToPaymentActivity" />
+        <activity android:name=".Activities.Add_EditUsersPageActivity" />
+        <activity android:name=".Activities.ManageUsersActivity" />
+        <activity android:name=".Activities.ReceiverPaymentPageActivity" />
+        <activity android:name=".Activities.AcceptPaymentPageActivity" />
+        <activity android:name=".Activities.ViewItemsToRefundActivity" />
+        <activity android:name=".Activities.RefundProductsPageActivity" />
+        <activity android:name=".Activities.AddProductsPageActivity" />
+        <activity android:name=".Activities.ManageProductsPageActivity" />
+        <activity android:name=".Activities.PaymentPageActivity" />
+        <activity android:name=".Activities.StartShoppingPageActivity" />
+        <activity android:name=".Activities.EditProfileActivity" />
+        <activity android:name=".Activities.HistoryPageActivity" />
+        <activity android:name=".Activities.SignUpPageActivity" />
+        <activity android:name=".Activities.HomePageActivity" />
+        <activity android:name=".Activities.WelcomePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Portrait"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+
+</manifest>

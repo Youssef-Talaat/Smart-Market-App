@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_border_edittext"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_historyrecord_date"
+        android:layout_width="159dp"
+        android:layout_height="32dp"
+        android:text="Date"
+        android:textAlignment="center"
+
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <TextView
+        android:id="@+id/txt_historyrecord_cost"
+
+        android:layout_width="151dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="6dp"
+        android:text="Amount"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_historyrecord_date"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_historyrecord_noofitems"
+        android:layout_width="170dp"
+        android:layout_height="32dp"
+        android:text="No Of Items"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toEndOf="@+id/txt_historyrecord_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <Button
+        android:id="@+id/btn_historyrecord_refund"
+        android:layout_width="138dp"
+        android:layout_height="37dp"
+        android:background="@color/barColor"
+        android:drawableRight="@drawable/refund"
+        android:text="Refund"
+android:textStyle="bold"
+        android:textColor="#121F61"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toEndOf="@+id/txt_historyrecord_cost"
+        app:layout_constraintTop_toBottomOf="@+id/txt_historyrecord_noofitems"
+        app:layout_constraintVertical_bias="0.636" />
+</androidx.constraintlayout.widget.ConstraintLayout>

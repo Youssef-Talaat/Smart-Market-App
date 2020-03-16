@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall4"
+    tools:context=".Activities.ManageUsersActivity">
+
+    <Button
+        android:id="@+id/btn_manageusers_adduser"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:background="@drawable/background_login"
+        android:fontFamily="sans-serif"
+        android:text="Add User"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_manageusers_viewUsers"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Button
+        android:id="@+id/btn_manageusers_cancel"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/background_cancel"
+
+        android:fontFamily="sans-serif"
+        android:text="log out"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_manageusers_adduser"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_manageusers_viewUsers"
+        android:layout_width="345dp"
+        android:layout_height="528dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

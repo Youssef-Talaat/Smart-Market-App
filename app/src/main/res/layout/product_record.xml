@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_border_edittext"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txt_productrecord_productname"
+        android:layout_width="230dp"
+        android:layout_height="33dp"
+        android:text="Product Name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_productrecord_productimage"
+        android:layout_width="110dp"
+        android:layout_height="96dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_delete_product"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/txt_productrecord_price"
+        android:layout_width="164dp"
+        android:layout_height="24dp"
+        android:text="Price: 30 EGP"
+        android:textColor="#121F61"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_productrecord_productname"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+
+        android:id="@+id/txt_productrecord_quantity"
+        android:layout_width="153dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+
+        android:text="Qunatity: 5"
+        android:textColor="#121F61"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_productrecord_price" />
+
+    <Button
+        android:id="@+id/btn_productrecord_addquantity"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+
+        android:background="@color/barColor"
+        android:drawableLeft="@drawable/plus1"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_productrecord_quantity"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Button
+        android:id="@+id/btn_delete_product"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/barColor"
+        android:drawableLeft="@drawable/cancel1"
+        android:paddingLeft="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_productrecord_removequantity"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:background="@color/barColor"
+        android:drawableLeft="@drawable/subtract"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_productrecord_addquantity"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_productrecord_quantity" />
+
+    <Button
+        android:id="@+id/btn_productrecord_editproduct"
+        android:layout_width="112dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/barColor"
+        android:drawableLeft="@drawable/edit"
+        android:text="Edit"
+        android:textColor="#121F61"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_productrecord_quantity"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

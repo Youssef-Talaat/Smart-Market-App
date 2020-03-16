@@ -1,0 +1,4 @@
+#Mon Dec 30 21:06:37 GMT+02:00 2019
+base.0=C\:\\Users\\Youssef\\AndroidStudioProjects\\Smart_Market\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

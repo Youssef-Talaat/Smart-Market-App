@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall4"
+
+    tools:context=".Activities.EditProductsPageActivity">
+
+    <EditText
+        android:id="@+id/edTxt_editproducts_barcode"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Barcode No."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/barcode"
+        android:drawablePadding="5dp"
+        android:textColorHint="#121F61"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <EditText
+        android:id="@+id/edTxt_editproducts_price"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/price"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#121F61"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_editproducts_quantity"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
+        android:id="@+id/edTxt_editproducts_quantity"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#121F61"
+        android:drawableLeft="@drawable/quantity"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_editproducts_name"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <EditText
+        android:id="@+id/edTxt_editproducts_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Product Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/nametag"
+        android:drawablePadding="5dp"
+        android:textColorHint="#121F61"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_editproducts_barcode"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+        android:id="@+id/btn_editproducts_uploadimage"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/background_login"
+        android:fontFamily="sans-serif"
+        android:text="Upload Image"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_editproducts_viewimage"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <Button
+        android:id="@+id/btn_editproducts_saveproduct"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:background="@drawable/background_confirm"
+        android:fontFamily="sans-serif"
+        android:text="Update Product"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editproducts_uploadimage"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <Button
+        android:id="@+id/btn_editproducts_cancel"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:background="@drawable/background_cancel"
+        android:fontFamily="sans-serif"
+
+        android:text="Cancel"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editproducts_saveproduct"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <ImageView
+        android:id="@+id/imgView_editproducts_viewimage"
+        android:padding="10dp"
+
+
+
+        android:layout_width="238dp"
+        android:layout_height="166dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/rounded_border_edittext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_editproducts_price"
+        app:layout_constraintVertical_bias="0.461" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
